@@ -1,0 +1,64 @@
+.card_sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    height: 100%;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    @media screen and (max-width: 720px) {
+        width: 100%;
+        align-items: flex-start;
+        text-align: left;
+        position: unset;
+    }
+    .checkboxes_filter {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        font-weight: bold;
+        .checkboxes_list {
+            display: flex;
+            flex-direction: column;
+            margin: 10px 0;
+            .checkboxes_field {
+                display: flex;
+                flex-direction: row;
+                width: 100%;
+                justify-content: start;
+                > input {
+                    margin-right: 15px;
+                }
+            }
+        }
+    }
+    .cancel_button {
+        width: 100%;
+        border: none;
+        background-color: white;
+        display: flex;
+        justify-content: flex-end;
+        margin-top: 10px;
+        margin-right: 10px;
+        cursor: pointer;
+        @media screen and (min-width: 720px) {
+            display: none;
+        }
+    }
+    .footer {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        position: fixed;
+        bottom: 0px;
+        > button {
+            width: 100%;
+            min-height: 30px;
+            cursor: pointer;
+        }
+        @media screen and (min-width: 720px) {
+            display: none;
+        }
+    }
+}

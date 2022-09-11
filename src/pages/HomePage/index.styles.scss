@@ -1,0 +1,24 @@
+.header {
+    background-color: aqua;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.sidebar {
+    width: 30%;
+    @media screen and (max-width: 720px) {
+        display: none;
+        width: 100%;
+    }
+}
+.products {
+    width: 70%;
+    @media screen and (max-width: 720px) {
+        width: 100%;
+    }
+}
